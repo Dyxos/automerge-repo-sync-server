@@ -59,6 +59,10 @@ export class Server {
       this.#readyResolvers.forEach((resolve) => resolve(true))
     })
 
+    this.#repo.storageId().then((storageId) => {
+      console.log(`Storage ID: ${storageId}`)
+    })
+
     this.#server.on("upgrade", (request, socket, head) => {
       this.#socket.handleUpgrade(request, socket, head, (socket) => {
         this.#socket.emit("connection", socket, request)
