@@ -13,6 +13,7 @@ server.
 `npx @automerge/automerge-repo-sync-server`
 
 Or you can run it locally:
+
 ```
 pnpm i
 pnpm start
