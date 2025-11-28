@@ -2,3 +2,16 @@
 /*.amrg
 
 automerge-repo-data
+
+# Node
+node_modules
+dist
+
+# Env and secrets
+.env
+.env.local
+.env.*
+
+# Build artifacts
+*.log
+*.tsbuildinfo
